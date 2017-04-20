@@ -60,13 +60,13 @@ rpi3 = "/dev/ttyS0"
 
 pianywhere = PiAnywhere(rpi3)
 ```
-Sending raw commands
+Sending raw commands directly to PiAnywhere and the modem
 ```python
 pianywhere.send_command(command)
 
 pianywhere.send_command_with_check(command, check)
 ```
-
+SMS functions
 ```python
 pianywhere.add_sms_responder(number)
 
@@ -81,6 +81,18 @@ pianywhere.get_all_sms_messages()
 pianywhere.get_unread_sms_messages()
 
 pianywhere.get_sms_message(id)
-
+```
+Wake and sleep mode commands
+```python
 pianywhere.set_wake_datetime(datetime)
+
+pianywhere.set_sleep_datetime(datetime)
+
+pianywhere.get_pianywhere_date()
+```
+Modem control commands
+```python
+pianywhere.powerkey_modem()
+
+pianywhere.reset_modem()
 ```
