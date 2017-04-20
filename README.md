@@ -1,4 +1,4 @@
-# python-pianywhere-serial-api
+# PiAnywhere Serial API for Python
 This is the python API for controlling features of the PiAnywhere mobile data board including power managment, sms messaging and calendar fucntions. [PiAnywhere Store](https://www.pianywhere.com)
 
 # Basic Usage
