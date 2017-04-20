@@ -73,6 +73,3 @@ class PiAnywhere():
 
     def reset_modem(self):
         self.send_command_with_check("AT+", "OK")
-
-pi = PiAnywhere()
-pi.add_sms_responder("01179098338")
