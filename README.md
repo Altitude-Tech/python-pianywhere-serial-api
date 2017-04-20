@@ -21,19 +21,24 @@ try:
     number = "phone number"
     pianywhere.add_sms_responder(number)
     pianywhere.send_sms_message(number, "You have been added to the pianywhere sms responder!")
+    
 except PIANYWHERE_ERROR_RESPONSE:
     # The modem could not process the command send
     pass
+    
 except PIANYWHERE_NO_CARRIER:
     # No carrier was detected, likely a problem with the SIM card
     pass
+    
 except PIANYWHERE_BAD_RESPONSE:
     # The UART response was incorrect, could not be processed
     pass
+    
 except PIANYWHERE_BUFFER_OVERFLOW:
     # Too much data requested, caused an internal buffer overflow
     pass
+    
 except PIANYWHERE_BAD_COMMAND:
     # Your command was not recognised as valid
-    
+    pass
 ```
