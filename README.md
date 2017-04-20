@@ -42,3 +42,29 @@ except PIANYWHERE_BAD_COMMAND:
     # Your command was not recognised as valid
     pass
 ```
+
+## API Reference
+
+```python
+pianywhere = PiAnywhere("/dev/ttyS0")
+
+pianywhere.send_command(command)
+
+pianywhere.send_command_with_check(command, check)
+
+pianywhere.add_sms_responder(number)
+
+pianywhere.remove_sms_responder(number)
+
+pianywhere.clear_sms_responders()
+
+pianywhere.send_sms_message(number, message)
+
+pianywhere.get_all_sms_messages()
+
+pianywhere.get_unread_sms_messages()
+
+pianywhere.get_sms_message(id)
+
+pianywhere.set_wake_datetime(datetime)
+```
