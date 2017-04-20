@@ -3,6 +3,8 @@
 # PiAnywhere Serial API for Python
 This is the python API for controlling features of the PiAnywhere mobile data board including power managment, sms messaging and calendar fucntions. [PiAnywhere Store](https://www.pianywhere.com)
 
+![alt text][pianywhere_4g]
+
 # Basic Usage
 
 The PiAnywhere API communications over the UART serial connection on the raspberry pi. When you create an instance of the PiAnywhere python API it will begin communications over the UART port. In order for this to work effectivly other devices cannot also use this serial line.
