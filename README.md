@@ -1,4 +1,4 @@
-[pianywhere_4g]: https://github.com/Altitude-Tech/python-pianywhere-serial-api/blob/master/unnamed.png "PiAnywhere 4G Board"
+[pianywhere_4g]: https://github.com/Altitude-Tech/python-pianywhere-serial-api/blob/master/pianywhere_4g.png "PiAnywhere 4G Board"
 
 # PiAnywhere Serial API for Python
 This is the python API for controlling features of the PiAnywhere mobile data board including power managment, sms messaging and calendar fucntions. [PiAnywhere Store](https://www.pianywhere.com)
