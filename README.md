@@ -6,6 +6,8 @@ This is the python API for controlling features of the PiAnywhere mobile data bo
 The PiAnywhere API communications over the UART serial connection on the raspberry pi. When you create an instance of the PiAnywhere python API it will begin communications over the UART port. In order for this to work effectivly other devices cannot also use this serial line.
 
 ```python
+from pianywhere import PiAnywhere
+
 # Create serial connection to PiAnywhere
 pianywhere = PiAnywhere("/dev/ttyS0")
 
@@ -44,14 +46,24 @@ except PIANYWHERE_BAD_COMMAND:
 ```
 
 ## API Reference
-
+Basic Setup
 ```python
-pianywhere = PiAnywhere("/dev/ttyS0")
+# If your are using the raspberry pi 1/2 or zero
+rpi2 = "/dev/ttyAMA0"
 
+# If you are using the raspberry pi 3
+rpi3 = "/dev/ttyS0"
+
+pianywhere = PiAnywhere(rpi3)
+```
+Sending raw commands
+```python
 pianywhere.send_command(command)
 
 pianywhere.send_command_with_check(command, check)
+```
 
+```python
 pianywhere.add_sms_responder(number)
 
 pianywhere.remove_sms_responder(number)
